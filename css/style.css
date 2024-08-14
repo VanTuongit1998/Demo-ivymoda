@@ -324,6 +324,14 @@ header.sticky {
     font-size: small;
     text-decoration: line-through;
 }
+
+.heading{
+    text-align: center;
+    font-size: 60px;
+    color: red;
+    font-weight: bold; 
+    padding: 10px 0px"
+}
 /* ------------------------footer------------------- */
 .grow-grid{
     margin-left: 50px;
@@ -332,9 +340,7 @@ header.sticky {
     text-align: center;
     justify-content: center;
     display: flex;
-    border-top: 1px solid black;
-    
-    
+    border-top: 1px solid black;  
 }
 .footer-item{
     text-align: left;
@@ -373,3 +379,110 @@ header.sticky {
     transition: 0.8s;
 }
 /* ----------------------- */
+@media(max-width:991px){
+    html {
+        font-size: 60%;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    .heading p{
+        font-size: 18px;
+    }  
+    .hot-products-item img {
+        width: 100%;
+        transition: 0.3s;
+        position: absolute;
+    }
+    .hot-products-item > p {
+        font-weight: 600px;
+        padding-top: 240px;
+        
+    }
+    .hot-products-item-price p span{
+        font-weight: 300;
+        font-size: small;
+        text-decoration: line-through;
+    }
+    .grow-grid{
+        margin-left: 50px;
+        padding-top: 20px;
+        gap: 100px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        border-top: 1px solid black;  
+    }
+}
+@media (max-width: 768px){
+    .heading p{
+        font-size: 18px;
+    }  
+    .hot-products-item img {
+        width: 100%;
+        transition: 0.3s;
+        position: absolute;
+    }
+    .hot-products-item > p {
+        font-weight: 600px;
+        padding-top: 170px;
+        
+    }
+    .hot-products-item-price p span{
+        font-weight: 300;
+        font-size: small;
+        text-decoration: line-through;
+    }
+    .grow-grid{
+        margin-left: 50px;
+        padding-top: 20px;
+        gap: 49px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        border-top: 1px solid black;  
+    }
+    
+}
+@media(max-width:450px){
+    html {
+        font-size: 50%;
+    }
+    .heading p{
+        font-size: 13px;
+        margin-top: 10px;
+    }  
+    .heading{
+        margin-top: -50px;
+        margin-bottom: 10px;
+    } 
+    .hot-products-item img {
+        width: 100%;
+        transition: 0.3s;
+        position: absolute;
+    }
+    .hot-products-item > p {
+        font-weight: 600px;
+        padding-top: 300px;
+        
+    }
+    .row-grid {
+        display: block;
+    }
+    .hot-products-item img {
+        width: 70%;
+        transition: 0.3s;
+        position: absolute;
+    }
+    .hot-products-item-price p span{
+        font-weight: 300;
+        font-size: small;
+        text-decoration: line-through;
+    }
+    .grow-grid{
+        text-align: center;
+        justify-content: center;
+        display: block;  
+    }
+    /* ivy 3 */
+}  
