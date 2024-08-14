@@ -1,0 +1,375 @@
+:root {
+    --main-text-font: Arial, Helvetica, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Garamond;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color:#000;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 50px;
+    height: 70px;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: #fff;
+    
+}
+header.sticky {
+    background: #fae1e1;
+}
+.logo {
+    flex: 1;
+}
+.menu {
+    flex: 3;
+    display: flex;
+}
+.menu > li {
+    padding: 0 12px;
+    position: relative;
+}
+.menu li:hover .sub-menu{
+    visibility: visible;
+    top: 45px;
+    background-color: #def2f6;
+}
+.sub-menu {
+    position: absolute;
+    width: 150px;
+    border: 1px solid #ccc;
+    padding: 10px 0px 10px 20px;
+    visibility: hidden;
+    top: 50px;
+    transition: 0.5s;
+    z-index: 1;
+    background: #fff;
+}
+.sub-menu ul {
+    padding-left: 20px;
+}
+.sub-menu ul a {
+    font-size: 14px;
+    font-weight: normal;
+}
+.menu li a {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    line-height: 20px;
+    font-family: Garamond;
+}
+
+.others {
+    flex: 1;
+    display: flex;
+}
+.others > li {
+    padding: 0 12px;
+    position: relative;
+}
+.others > li::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 50%;
+    background: #cccccc;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.others > li:last-child::after{
+    display: none;
+}
+.others > li:first-child {
+    position: relative;
+}
+.others > li:first-child input {
+    width: 80%;
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #333;
+
+}
+.others > li:first-child i {
+    position: absolute;
+}
+#slider{
+    padding-bottom: 30px;  
+    overflow: hidden; 
+}
+
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 42.25%;
+    transition: 0.3s;
+    text-align: center;
+    margin-top: 70px;
+    
+}
+.aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    border-radius: 100px 0px;
+}
+
+.dot-container {
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.dot {
+    height: 16px;
+    width: 16px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.dot.active{
+    background-color: #333;
+}
+
+/*-----------------------app-------------------------*/
+.app-container {
+    text-align: center;
+    align-items: center;
+    padding: 0px 0px 50px 0px;
+}
+
+
+.app-container p {
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: #000;
+    font-weight: bold;
+}
+.app-container input {
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    width: 400px;
+    text-align: center;
+    outline: none;
+}
+/*-----------------------footer-------------------------*/
+.footer {
+    text-align: center;
+}
+.footer-top {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 70px;
+}
+.footer-top img {
+    height: 50px;
+}
+.footer-top li {
+    padding: 0 12px;
+    position: relative;
+}
+.footer-top li::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80%;
+    background: #cccccc;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.footer-top li:last-child::after {
+    display: none;
+}
+.footer-top li:last-child a {
+    margin-right: 12px;
+    color: #333;
+}
+.footer-center {
+    text-align: center;
+}
+.footer-bottom {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* ----------------------------Products 1 & 2--------------------------- */
+.hot-products {
+    padding: 50px;
+    margin-top: -80px;
+    padding-left: 100px;
+   
+}
+.heading-text {
+    font-weight: bolder;
+    padding: 12px;
+    position: relative;
+    margin: 20px 0;
+}
+
+.heading-text::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 50%;
+    left: 0;
+    top:50%;
+    transform: translateY(-50);
+    background-color: #000;
+}
+.heading-text::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 3px;
+    left: 0;
+    bottom:0;
+    transform: translateY(-50);
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.row-grid {
+    display: grid;
+    justify-content: space-between;
+
+}
+.hot-products .row-grid-hot-products{
+    grid-template-columns: repeat(5,19%);
+     
+}
+
+.hot-products-item img:last-child {
+    margin-right: 0;
+}
+
+.hot-products-item img {
+    width: 100%;
+    transition: 0.3s;
+    position: absolute;
+}
+
+.hot-products-item {
+    position: relative;
+}
+.hot-products-item img.hover-img {
+    opacity: 0;
+    transition: 1.0s;
+}
+
+.hot-products-item:hover img.hover-img {
+    opacity: 1;
+    transition: 1.0s;
+}
+.hot-products-item:hover img.default-img {
+    opacity: 0;
+    transition: 1.0s;
+}
+
+
+.hot-products-item > p {
+    font-weight: 600px;
+    padding-top: 400px;
+    
+}
+.hot-products-item span{
+    font-size: smaller;
+    font-weight: 200px;
+    
+}
+.hot-products-item-price{
+    margin-top: 6px;
+    
+}
+.hot-products-item-price p {
+    font-weight: 600;
+    
+}
+.hot-products-item-price p span{
+    font-weight: 300;
+    font-size: small;
+    text-decoration: line-through;
+}
+/* ------------------------footer------------------- */
+.grow-grid{
+    margin-left: 50px;
+    padding-top: 20px;
+    gap: 200px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    border-top: 1px solid black;
+    
+    
+}
+.footer-item{
+    text-align: left;
+    line-height: 40px;
+    justify-content: space-between;
+}
+.footer-item .img-app{
+    display: flex;
+    height: 20px;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.footer-item b{
+    font-size: 20px;
+}
+.footer-item p{
+    font-size: 15px;
+}
+/* --------------------------------sp3 */
+.row-grid-product{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.add-active{
+    border: none;
+    border-bottom: 2px solid red;
+    color: #3498db;
+    font-weight: bold;
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+/* ----------------------- */

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web-Demo</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cartegory.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="menu">
+            <li><a href="">NỮ</a>
+                <ul class="sub-menu">
+                    <li><a href="cartegory.html">Hàng mới về</a></li>               
+                    <li><a href="#">Áo</a>
+                        <ul>
+                            <li><a href="cartegory.html">Áo dài</a></li>
+                            <li><a href="">Áo croptop</a></li>
+                            <li><a href="">Áo peplum</a></li>
+                        </ul>
+                    </li>                   
+                </ul>
+            </li>
+            <li><a href="">NAM</a>
+                <ul class="sub-menu">
+                    <li><a href="cartegory.html">Hàng mới về</a></li>               
+                    <li><a href="#">Áo</a>
+                        <ul>
+                            <li><a href="cartegory.html">Áo Vest</a></li>
+                            <li><a href="">Áo sơ mi</a></li>
+                            <li><a href="">Áo khoác</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Quần</a>
+                        <ul>
+                            <li><a href="">Quần dài</a></li>
+                            <li> <a href="">Quần short</a></li>
+                        </ul>
+                    </li>                  
+                </ul>
+            </li>
+ 
+            <li><a href="">TRẺ EM</a></li>         
+            <li><a href="" style="color: red;">HOST SALE</a></li>
+            <li><a href="">BỘ SƯU TẬP</a></li>
+            <li><a href="">VỀ VỚI CHÚNG TÔI</a></li>
+        </div>
+        <div class="others">
+            <li><input type="text" placeholder="Tim kiem"><i class="fa fa-search"></i></li>
+            <li><a class="fa fa-paw" href="#"></a></li>
+            <li><a class="fa fa-user"></a></li>
+            <li><a class="fa fa-shopping-bag" aria-hidden="true"></a></li>
+        </div>
+    </header>
+<!-- -------------------------------cart------------------------------- -->
+    <section class="cart">
+        <div class="container">
+            <div class="cart-top-wrap">
+                <div class="cart-top">
+                    <div class="cart-top-cart cart-top-item">
+                        <i class="fa fa-shopping-cart " style="color: blue;"></i>
+                    </div>
+                    <div class="cart-top-adress cart-top-item">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+                    <div class="cart-top-payment cart-top-item">
+                        <i class="fas fa-money-check"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="cart-content">
+                <div class="cart-content-left">
+                    <table>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Màu</th>
+                            <th>Size</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                            <th>Xóa</th>
+                        </tr>
+                        <tr>
+                            <td><img src="https://pubcdn.ivymoda.com/files/product/thumab/400/2020/12/28/6023ae96b366eeff395f8a7a81738f04.webp" alt=""></td>
+                            <td><p>Áo Vest</p></td>
+                            <td>Đen</td>
+                            <td><p>XL</p></td>
+                            <td><input type="number" value="1"></td>
+                            <td><p>1.990.000<sup>đ</sup></p></td>
+                            <td><span>X</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://pubcdn.ivymoda.com/files/product/thumab/400/2024/07/31/273b22a3eb784997de8b5dd449e7bf0b.webp" alt=""></td>
+                            <td><p>Đầm xòe Pastel</p></td>
+                            <td>Trắng ngà</td>
+                            <td><p>S</p></td>
+                            <td><input type="number" value="1"></td>
+                            <td><p>1.650.000<sup>đ</sup></p></td>
+                            <td><span>X</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cart-content-right">
+                    <table>
+                        <tr>
+                            <th colspan="2">TỔNG TIỀN GIỎ HÀNG</th>
+                        </tr>
+                        <tr>
+                            <td>Tổng sản phẩm</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Tổng tiền hàng</td>
+                            <td><p>1.119.000<sub>đ</sub></p</td>
+                        </tr>
+                        <tr>
+                            <td>Tạm tính</td>
+                            <td><p>1.119.000<sup>đ</sup></p></td>
+                        </tr>
+                    </table>
+                    <div class="cart-content-right-button">
+                        <button>TIẾP TỤC MUA SẮM</button>
+                        <button><a href="delivery.html">THANH TOÁN</a></button>
+                    </div>
+                    <div class="cart-content-right-dangnhap">
+                        <p>Tài khoản IVY</p>
+                        <p>Hãy <a href="" style="color: red;">Đăng nhập </a>tài khoản của bạn để tích điểm thành viên</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer> 
+        <div class="container"> 
+            <div class="grow-grid">
+                <div class="footer-item">
+                    <b>Download</b>
+                    <div class="img-app">
+                        <img src="img/facebook.png"></img>
+                        <img src="img/instagram.png"></img>
+                        <img src="img/pinterest.png"></img>
+                        <img src="img/img-congthuong.png">
+                    </div>
+                    <div>
+                        <img src="img/appstore.png" alt="" width="100px">
+                        <img src="img/googleplay.png" alt="" width="100px">
+                    </div>         
+                </div>
+                <div class="footer-item">
+                    <b>Giới thiệu</b>
+                    <p>IVY moda</p>
+                    <p>Tuyển dụng</p>              
+                </div>
+                <div class="footer-item">
+                    <b>Dịch vụ khách hàng</b>
+                    <p>Chính sách điều khoản</p>
+                    <p>Chính sách thanh toán</p>
+                    <p>Chính sách đổi trả</p>
+                    <p>Chính sách bảo hành</p>              
+                </div>
+                <div class="footer-item">
+                    <b>Liên hệ</b>
+                    <p>Hotline</p>
+                    <p>Email</p>
+                    <p>Live Chat</p>     
+                </div>
+                
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>
